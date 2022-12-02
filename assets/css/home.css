@@ -1,0 +1,333 @@
+/* css design  */
+
+
+/* FONT IMPORT SECTION */
+
+@font-face {
+    font-family: "Againts";
+    src: url(/fonts/againts.otf) format('opentype');
+}
+
+@font-face {
+    font-family: "Alarm-Clock";
+    src: url(/fonts/alarm_clock.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Game Of Squids";
+    src: url(/fonts/Game_Of_Squids.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Hand_TypeWriter";
+    src: url(/fonts/Hand_TypeWriter.ttf) format('truetype');
+}
+
+/* Navbar */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;;
+}
+
+
+
+/* style for body */
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: lavender;
+}
+/* style for single task div container */
+
+.singleTask-container {
+    margin-bottom: 2%;
+}
+
+
+.singleTask{
+    border: 1px solid gray;
+    background-color: grey;
+    width: 75%;
+    height: 90px;
+    color: white;
+    display: flex;
+    align-items: baseline;
+    /* justify-content: space-evenly; */
+    position: relative;
+    left: 11.5%;
+}
+/* style for del check */
+.delete-check{
+    margin: 15px;
+
+}
+/* style for category section */
+
+.category{
+    border: 2px solid rgb(52, 6, 255);
+    background-color: rgb(52, 6, 255);
+}
+
+/* style for TODO heading */
+
+.todo-heading{
+    color: gray;
+    text-align: center;
+    margin-top: 11%;
+    margin-bottom: 1px;
+    font-family: "Game Of Squids";
+    font-size: 2rem;
+}
+
+.todo-heading h1 {
+    margin-bottom: 5px;
+}
+
+/* style for form */
+
+.form_class{
+    
+    width: 90%;
+    text-align: center;
+    position: relative;
+    left: 4%;
+    /* right: 5%; */
+}
+/* style for description area */
+
+.desc_Class {
+    /* margin-top: 0px !important; */
+}
+
+.desc_Class input{
+    height: 50px;
+    width: 100%;
+    margin: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+    /* border-radius: 22px; */
+    outline: none;
+    border-color: lavender;
+    font-family: "Againts";
+    font-size: 2rem;
+    font-weight: 200;
+}
+/* implemented some hover in description section */
+.desc_Class input:hover{
+    /* transform: scale(1.1); */
+    box-shadow: 0px 0px 5px 2px white ;
+    background-color: rgb(47, 199, 245);
+}
+
+/* design for select and option START */
+/* style for select and options input input area */
+
+.select_and_input{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.select_and_input select{
+    height: 45px;
+    width: 40%;
+    transition: transform 0.3s;
+    text-align: center;
+    margin-right: 0px;
+    font-family: "Alarm-Clock";
+    font-size: 1.25rem;
+}
+.select_and_input input{
+    height: 45px;
+    width: 40%;
+    text-align: center;
+    transition: transform 0.3s;
+}
+.select_and_input select:hover{
+    box-shadow: 0px 0px 5px 2px white ;
+    background-color: rgb(47, 199, 245);
+}
+.select_and_input input:hover{
+    box-shadow: 0px 0px 5px 2px white ;
+    background-color: rgb(47, 199, 245);
+}
+/* design for select and option END */
+
+/* design for dates value */
+.datesValues{
+    transition: transform 0.3s;
+    font-family: "Alarm-Clock";
+    font-size: 1.25rem;
+}
+.datesValues:hover{
+    box-shadow: 0px 0px 5px 2px white ;
+    background-color: rgb(47, 199, 245);
+}
+/* design for button */
+.buttonDesign{
+    height: 50px;
+    width: 120px;
+    color: white;
+    transition: transform 0.3s;
+}
+.buttonDesign:hover{
+    box-shadow: 0px 0px 5px 2px rgb(23, 228, 243) ; 
+    transform:scale(1.2);
+}
+.colorPink{
+    background-color: rgb(241, 9, 183);
+    margin-left: 10px;
+    
+}
+.colorGrey{
+    background-color: gray;
+    margin-right: 10px;
+}
+
+.commonClass{
+    height: auto;
+    width: auto;
+    text-align: center;
+    padding: 5px;
+    border-radius: 15px;    
+    color: white;
+    transition: transform 0.3s;
+}
+.commonClass:hover{
+    box-shadow: 0px 0px 5px 2px rgb(14, 6, 6) ; 
+    transform:scale(1.2);
+}
+/* design for edit section */
+
+
+.editClass{
+    transition: transform 0.3s;
+    position: absolute;
+    left: 80%;
+    margin: 20px;
+}
+.editClass:hover{
+    box-shadow: 0px 0px 5px 2px rgb(17, 95, 240) ; 
+    transform:scale(1.2);
+}
+
+.editClass a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: 1px solid  rgb(28, 161, 250);
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(28, 161, 250);
+    font-family: "Alarm-Clock";
+    font-weight: 800;
+}
+/* for placing placeholder in the center  */
+input[type="textarea"]::placeholder { 
+                  
+    /* Firefox, Chrome, Opera */
+    text-align: center;
+}
+/* design for EDIT button*/
+.edit-button{
+    transition: transform 0.3s;
+    margin-top: 10px;
+    height: 30px;
+    width: 10%;
+    background-color: rgb(28, 161, 250);
+    border-color: rgb(28, 161, 250) !important;
+    color: rgb(0, 0, 0);
+    font-family: "Alarm-Clock";
+    font-weight: 800;
+}
+
+.edit-button:hover{
+    box-shadow: 0px 0px 5px 2px rgb(17, 95, 240) ; 
+    transform:scale(1.2);
+}
+
+
+input.delete-check{
+    width: 13px;
+    height: 13px;
+
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Design for different category */
+.work{
+    background-color: #7978FF !important;
+    border-color: #7978FF !important;
+    color: rgb(0, 0, 0);
+    font-family: "Alarm-Clock";
+    font-weight: 800;
+        
+}
+.Personal{
+    background-color: #C689C6;
+    border-color: #C689C6 !important;
+    color: rgb(0, 0, 0);
+    font-family: "Alarm-Clock";
+    font-weight: 800;
+
+}
+.Cleaning{
+    background-color: #840ee6;
+    border-color: #840ee6 !important;
+    color: rgb(0, 0, 0);
+    font-family: "Alarm-Clock";
+    font-weight: 800;
+}
+.Others{
+    background-color: #EF9A53;
+    border-color: #EF9A53 !important;
+    color: rgb(0, 0, 0);
+    font-family: "Alarm-Clock";
+    font-weight: 800;
+}
+.name_and_dueDate{
+    height: auto;
+    width: 200px;
+    
+}
+.dueDate{
+    width: fit-content;
+}
+.color-white{
+    color: white;
+}
+
+ /* footer */
+
+ footer {
+    margin: 0px;
+    position: fixed;
+    left: 0;
+    bottom: -10;
+    padding-top: 5px !important;
+    /* padding-bottom: 5px !important; */
+    width: 100%;
+    background-color: lavender;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 1.5rem !important;
+    font-weight: bold;
+    
+ }
+ 
+ .fa-github {
+    color: black;
+    font-size: 1.5rem !important;
+   
+
+ }
+
+ .fa-linkedin {
+    color: blue;
+    font-size: 1.5rem !important;
+   
+ }

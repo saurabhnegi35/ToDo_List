@@ -1,25 +1,20 @@
 {
-  "dependencies": {
-    "ejs": "^3.1.8",
-    "express": "^4.18.2",
-    "mongoose": "^6.7.5"
-  },
-  "name": "todo_list",
+  "name": "Todo_List",
   "version": "1.0.0",
-  "description": "It is a simple TODO web Application made using NodeJS and MongoDB as Database. Using this Application User can Create, Edit and Delete all the ToDo Items.",
+  "description": "coding ninjas mini project one todo application",
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SaurabhNegi35/ToDo_List.git"
-  },
   "author": "Saurabh Negi",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/SaurabhNegi35/ToDo_List/issues"
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.1",
+    "mongoose": "^6.0.6",
+    "sweetalert": "^2.1.2"
   },
-  "homepage": "https://github.com/SaurabhNegi35/ToDo_List#readme"
+  "devDependencies": {}
 }
